@@ -108,7 +108,9 @@ t = lerp(min-seconds, max-seconds, (d' - min-distance) / (max-distance - min-dis
 
 - Окно: `MenuType.GENERIC_9xN.builder().title(...).build(player).open()`.
 - Обновление контента — правка top-инвентаря (клиент видит сразу).
-- Заголовок (счётчик онлайна) — `InventoryView#setTitle` без переоткрытия.
+  В 1.21.8 сменить заголовок открытого окна чистым API нельзя
+  (`setTitle` принимает только String и сломан), поэтому заголовок
+  фиксируется при открытии, а динамика — в слотах.
 - **Оптимизация join/quit**: `MenuService.scheduleOnlineRefresh()`
   планирует единственную отложенную задачу (`refresh-delay-ticks`);
   пачка событий схлопывается в один рефреш, перерисовываются только

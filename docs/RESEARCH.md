@@ -48,9 +48,11 @@
 ### Рамки
 - `ItemFrame#setVisible(boolean)`, `setFixed(boolean)`,
   `setItemDropChance(float)`, `Hanging#setFacingDirection(BlockFace, boolean)`.
-- `PlayerItemFrameChangeEvent` (org.bukkit.event.player, Spigot/Paper):
-  actions `PLACE/REMOVE/ROTATE/LEFT_CLICK` — перехватываем ЛКМ
-  (предмет выпадает, рамка исчезает) и блокируем правый клик.
+- `PlayerItemFrameChangeEvent` — пакет **io.papermc.paper.event.player**
+  (в org.bukkit.event.player такого класса в 1.21.8 НЕТ), вложенный enum
+  `ItemFrameChangeAction`: `PLACE`, `REMOVE`, `ROTATE` (константы LEFT_CLICK
+  нет). ЛКМ по заполненной рамке = действие `REMOVE` — его и перехватываем:
+  отмена ванили + свой дроп предмета + удаление рамки.
 
 ### Прочее
 - `Player/OfflinePlayer#getRespawnLocation()` — точка спавна
