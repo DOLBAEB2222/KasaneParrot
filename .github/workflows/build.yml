@@ -87,12 +87,14 @@ jobs:
           EOF
           )
           gh release delete dev --yes --cleanup-tag || true
+          JAR=$(find build/libs -name "*.jar" ! -name "*-sources.jar" | head -1)
+          echo "Публикую: $JAR"
           gh release create dev \
             --target "$GITHUB_SHA" \
             --title "KasaneParrot — dev-сборка" \
             --notes "$NOTES" \
             --prerelease \
-            build/libs/*.jar
+            "$JAR"
 
       - name: Upload jar
         if: always()
