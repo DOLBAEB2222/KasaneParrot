@@ -42,13 +42,13 @@ public final class DestinationMenu extends AbstractCourierMenu {
 
     @Override
     protected @NotNull MenuType.Typed<InventoryView, ? extends InventoryViewBuilder<InventoryView>> menuType() {
-        return chestType(plugin.cfg().gui().destination().rows);
+        return chestType(plugin.cfg().gui().destination.rows);
     }
 
     @Override
     protected @NotNull Component renderTitle() {
         return net.kyori.adventure.text.minimessage.MiniMessage.miniMessage()
-                .deserialize(plugin.cfg().gui().destination().title);
+                .deserialize(plugin.cfg().gui().destination.title);
     }
 
     @Override
@@ -59,7 +59,7 @@ public final class DestinationMenu extends AbstractCourierMenu {
             top.setItem(i, filler());
         }
 
-        var icons = plugin.cfg().gui().destination();
+        var icons = plugin.cfg().gui().destination;
         top.setItem(SLOT_TO_PLAYER, named(icons.toPlayerIcon,
                 plugin.messages().get(Msg.GUI_DESTINATION_PLAYER_NAME),
                 plugin.messages().getList(Msg.GUI_DESTINATION_PLAYER_LORE)));

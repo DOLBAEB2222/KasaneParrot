@@ -286,7 +286,7 @@ public final class DeliveryService implements PluginModule {
             return;
         }
         // «Улетел на 100 блоков и пропал»: поднимаем и скрываем.
-        double height = plugin.cfg().flight().ascend().height;
+        double height = plugin.cfg().flight().ascend.height;
         parrot.teleport(session.vanishPoint().clone().add(0, height, 0));
         hideParrot(parrot);
 
@@ -326,7 +326,7 @@ public final class DeliveryService implements PluginModule {
 
         Location approach = point.clone().add(
                 (random.nextDouble() - 0.5) * 8.0D,
-                plugin.cfg().flight().approach().heightAboveTarget,
+                plugin.cfg().flight().approach.heightAboveTarget,
                 (random.nextDouble() - 0.5) * 8.0D
         );
         session.approachPoint(approach);
@@ -360,11 +360,11 @@ public final class DeliveryService implements PluginModule {
             // Цель движется или рядом нет места.
             // TODO(этап 2): hover-follow — лететь рядом с целью (упреждение
             //   из MovementAnalyzer + FlightPath) и садиться при остановке.
-            long maxWaitMs = plugin.cfg().flight().landing().maxWaitSeconds * 1000L;
+            long maxWaitMs = plugin.cfg().flight().landing.maxWaitSeconds * 1000L;
             if (courier.stateDurationMs() < maxWaitMs) {
                 return; // ещё ждём удобного момента
             }
-            String timeoutAction = plugin.cfg().flight().landing().timeoutAction;
+            String timeoutAction = plugin.cfg().flight().landing.timeoutAction;
             if ("DROP_IN_AIR".equalsIgnoreCase(timeoutAction) && target != null) {
                 // Выпростить посылку рядом с бегущей целью.
                 session.handoffPoint(target.getLocation().clone());
@@ -435,7 +435,7 @@ public final class DeliveryService implements PluginModule {
         Parrot parrot = courier.entity();
         if (parrot != null) {
             Location above = owner.getLocation().clone()
-                    .add(0, plugin.cfg().flight().approach().heightAboveTarget / 2.0D, 0);
+                    .add(0, plugin.cfg().flight().approach.heightAboveTarget / 2.0D, 0);
             parrot.teleportAsync(above).thenRun(() -> showParrot(parrot));
         }
         session.nearOwner(true);
@@ -454,7 +454,7 @@ public final class DeliveryService implements PluginModule {
             // TODO(этап 2): спуск к хозяину по дуге, а не мгновенный телепорт.
             parrot.teleport(owner.getLocation());
             plugin.modelService().applyAfterDeliveryModel(parrot, owner);
-            if (plugin.cfg().flight().returning().perchOnShoulder) {
+            if (plugin.cfg().flight().returning.perchOnShoulder) {
                 plugin.shoulderService().perch(owner, parrot);
             } else {
                 parrot.setSitting(true);
@@ -479,7 +479,7 @@ public final class DeliveryService implements PluginModule {
         Parrot parrot = courier.entity();
         if (courier.isAlive()) {
             parrot.teleport(owner.getLocation());
-            if (plugin.cfg().flight().returning().perchOnShoulder) {
+            if (plugin.cfg().flight().returning.perchOnShoulder) {
                 plugin.shoulderService().perch(owner, parrot);
             } else {
                 parrot.setSitting(true);
@@ -567,7 +567,7 @@ public final class DeliveryService implements PluginModule {
     }
 
     private Component offlineActionMessage() {
-        return switch (plugin.cfg().delivery().offlinePolicy()) {
+        return switch (plugin.cfg().delivery().offlinePolicy) {
             case DELIVER_TO_RESPAWN -> plugin.messages().get(Msg.DELIVERY_ACTION_RESPAWN);
             case RETURN_TO_SENDER -> plugin.messages().get(Msg.DELIVERY_ACTION_RETURN);
             case WAIT -> plugin.messages().get(Msg.DELIVERY_ACTION_WAIT);
@@ -591,12 +591,12 @@ public final class DeliveryService implements PluginModule {
     }
 
     private long ascendMs() {
-        var a = plugin.cfg().flight().ascend();
+        var a = plugin.cfg().flight().ascend;
         return (long) (a.height / a.speedBlocksPerTick * 50.0D);
     }
 
     private long descendMs() {
-        var a = plugin.cfg().flight().approach();
+        var a = plugin.cfg().flight().approach;
         return (long) (a.heightAboveTarget / a.descentSpeed * 50.0D);
     }
 
@@ -605,7 +605,7 @@ public final class DeliveryService implements PluginModule {
     }
 
     private void debug(@NotNull String message) {
-        if (plugin.cfg().debug) {
+        if (plugin.cfg().debug()) {
             plugin.getLogger().info("[delivery] " + message);
         }
     }

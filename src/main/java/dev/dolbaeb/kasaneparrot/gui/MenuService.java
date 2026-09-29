@@ -123,13 +123,13 @@ public final class MenuService implements PluginModule {
 
     /** Планирует единый рефреш списков игроков (схлопывает пачки join/quit). */
     public void scheduleOnlineRefresh() {
-        if (!plugin.cfg().gui().select().liveUpdate) {
+        if (!plugin.cfg().gui().select.liveUpdate) {
             return;
         }
         if (refreshTask != null) {
             return; // уже запланировано
         }
-        long delay = plugin.cfg().gui().select().refreshDelayTicks;
+        long delay = plugin.cfg().gui().select.refreshDelayTicks;
         refreshTask = Bukkit.getScheduler().runTaskLater(plugin, () -> {
             refreshTask = null;
             for (AbstractCourierMenu menu : openMenus.values()) {

@@ -13,7 +13,7 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.InventoryView;
-import org.bukkit.inventory.ItemMeta;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.MenuType;
 import org.bukkit.inventory.view.builder.InventoryViewBuilder;
@@ -55,13 +55,13 @@ public final class ConfirmMenu extends AbstractCourierMenu {
 
     @Override
     protected @NotNull MenuType.Typed<InventoryView, ? extends InventoryViewBuilder<InventoryView>> menuType() {
-        return chestType(plugin.cfg().gui().confirm().rows);
+        return chestType(plugin.cfg().gui().confirm.rows);
     }
 
     @Override
     protected @NotNull Component renderTitle() {
         return net.kyori.adventure.text.minimessage.MiniMessage.miniMessage()
-                .deserialize(plugin.cfg().gui().confirm().title);
+                .deserialize(plugin.cfg().gui().confirm.title);
     }
 
     @Override
@@ -73,7 +73,7 @@ public final class ConfirmMenu extends AbstractCourierMenu {
         }
 
         long seconds = estimateSeconds();
-        var icons = plugin.cfg().gui().confirm();
+        var icons = plugin.cfg().gui().confirm;
 
         // Посылка (снимок из руки).
         ItemStack payload = payloadSnapshot.clone();

@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryView;
-import org.bukkit.inventory.ItemMeta;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.MenuType;
 import org.bukkit.inventory.view.builder.InventoryViewBuilder;
@@ -48,14 +48,14 @@ public final class PlayerSelectMenu extends AbstractCourierMenu {
 
     @Override
     protected @NotNull MenuType.Typed<InventoryView, ? extends InventoryViewBuilder<InventoryView>> menuType() {
-        return chestType(plugin.cfg().gui().select().rows);
+        return chestType(plugin.cfg().gui().select.rows);
     }
 
     @Override
     protected @NotNull Component renderTitle() {
         int online = targets().size();
         return net.kyori.adventure.text.minimessage.MiniMessage.miniMessage().deserialize(
-                plugin.cfg().gui().select().title + " <gray>(онлайн: " + online + ")</gray>"
+                plugin.cfg().gui().select.title + " <gray>(онлайн: " + online + ")</gray>"
         );
     }
 
@@ -65,7 +65,7 @@ public final class PlayerSelectMenu extends AbstractCourierMenu {
         top.clear();
         slotToTarget.clear();
 
-        List<Player> players = targets();
+        List<? extends Player> players = targets();
         int contentSlots = contentSlots();
         int pages = Math.max(1, ceilDiv(players.size(), contentSlots));
         page = Math.max(0, Math.min(page, pages - 1));
@@ -83,7 +83,7 @@ public final class PlayerSelectMenu extends AbstractCourierMenu {
             for (int i = base; i < top.getSize(); i++) {
                 top.setItem(i, filler());
             }
-            var icons = plugin.cfg().gui().select();
+            var icons = plugin.cfg().gui().select;
             if (page > 0) {
                 top.setItem(base, named(icons.prevPageIcon,
                         plugin.messages().get(Msg.GUI_PREV_PAGE), null));
@@ -127,8 +127,8 @@ public final class PlayerSelectMenu extends AbstractCourierMenu {
 
     /* ------------------------------------------------------------------ */
 
-    private @NotNull List<Player> targets() {
-        boolean showSelf = plugin.cfg().gui().select().showSelf;
+    private @NotNull List<? extends Player> targets() {
+        boolean showSelf = plugin.cfg().gui().select.showSelf;
         return Bukkit.getOnlinePlayers().stream()
                 .filter(p -> showSelf || !p.equals(viewer))
                 .sorted(Comparator.comparing(Player::getName))

@@ -32,7 +32,7 @@ public final class ShoulderService {
      * @return true, если посадка удалась
      */
     public boolean perch(@NotNull Player owner, @NotNull Parrot parrot) {
-        String side = plugin.cfg().flight().returning().shoulderSide.toUpperCase(java.util.Locale.ROOT);
+        String side = plugin.cfg().flight().returning.shoulderSide.toUpperCase(java.util.Locale.ROOT);
         if ("LEFT".equals(side)) {
             owner.setShoulderEntityLeft(parrot);
             return true;

@@ -38,7 +38,7 @@ public final class LandingSpotFinder {
      */
     public Optional<LandingSpot> find(@NotNull Player target) {
         Location eyes = target.getEyeLocation();
-        var scan = plugin.cfg().flight().landing();
+        var scan = plugin.cfg().flight().landing;
 
         LandingSpot best = null;
 
@@ -81,7 +81,7 @@ public final class LandingSpotFinder {
 
         // Скоринг: ближе к игроку — лучше; небольшой штраф за перепад высоты.
         double distance = ground.distance(target.getLocation());
-        if (distance < plugin.cfg().flight().landing().minDistance) {
+        if (distance < plugin.cfg().flight().landing.minDistance) {
             return null;
         }
         double score = bias * (1.0D / (1.0D + distance))
@@ -95,7 +95,7 @@ public final class LandingSpotFinder {
      */
     @Nullable
     private Location groundBelow(@NotNull Location candidate) {
-        var scan = plugin.cfg().flight().landing();
+        var scan = plugin.cfg().flight().landing;
         int x = candidate.getBlockX();
         int z = candidate.getBlockZ();
         var world = candidate.getWorld();
@@ -130,12 +130,12 @@ public final class LandingSpotFinder {
         if (!type.isSolid()) {
             return false;
         }
-        return !plugin.cfg().flight().landing().forbiddenMaterials.contains(type);
+        return !plugin.cfg().flight().landing.forbiddenMaterials.contains(type);
     }
 
     /** Дополнительные проверки поверхности: вода, опасные соседи. */
     private boolean isSafeSurface(@NotNull Block surface, @NotNull Block below) {
-        var scan = plugin.cfg().flight().landing();
+        var scan = plugin.cfg().flight().landing;
         Material surfaceType = surface.getType();
         Material belowType = below.getType();
 
