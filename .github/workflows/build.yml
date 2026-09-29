@@ -64,6 +64,36 @@ jobs:
             echo "no logs to clean"
           fi
 
+      - name: Publish dev release
+        if: success() && github.event_name == 'push'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ls build/libs/
+          NOTES=$(cat <<'EOF'
+          Автосборка KasaneParrot (Paper 1.21.8, Java 21).
+
+          **Быстрый тест**
+          1. Положите jar в `plugins/`, запустите сервер.
+          2. Приручите попугая семечками (пшеница/тыква/дыня/свёкла).
+          3. Shift+ПКМ мешочком (Bundle) по своему попугаю — он станет курьером.
+          4. ПКМ по попугаю с предметом в руке (или Shift+ПКМ) — меню отправки.
+          5. Чтобы не ждать 30 сек–5 мин, в `plugins/KasaneParrot/config.yml`
+             поставьте `delivery.time.min-seconds: 5`, `max-seconds: 15` и
+             выполните `/kasane reload`.
+
+          Ресурспак «Pesky Parrots.zip» — в корне репозитория (по желанию;
+          смена «модельки» работает и без него — меняется вариант попугая).
+          EOF
+          )
+          gh release delete dev --yes --cleanup-tag || true
+          gh release create dev \
+            --target "$GITHUB_SHA" \
+            --title "KasaneParrot — dev-сборка" \
+            --notes "$NOTES" \
+            --prerelease \
+            build/libs/*.jar
+
       - name: Upload jar
         if: always()
         uses: actions/upload-artifact@v4
