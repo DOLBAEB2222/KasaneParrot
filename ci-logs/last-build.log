@@ -1,156 +1,156 @@
-commit: a0c1e2c2d7d5ab1c771b8c5a04b208fbfbadaa58
-date: 2026-09-29T09:51:23Z
+commit: 529172f03fb4d8f5fec0e9888e30ef697a22a0cd
+date: 2026-09-29T09:54:19Z
 
-18:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: <identifier> expected
-21:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: -> expected
-24:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: ';' expected
-27:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:459: error: 'else' without 'if'
-30:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: <identifier> expected
-33:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: -> expected
-36:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: ';' expected
-39:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:484: error: 'else' without 'if'
-42:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: <identifier> expected
-45:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: -> expected
-50:> Task :compileJava FAILED
-60:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:459: error: 'else' without 'if'
-63:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:484: error: 'else' without 'if'
-66:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: <identifier> expected
-69:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: -> expected
-72:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: ';' expected
-75:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: <identifier> expected
-78:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: -> expected
-81:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: ';' expected
-84:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: <identifier> expected
-87:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: -> expected
-96:* Exception is:
-97:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileJava'.
-98:	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
-99:	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
-100:	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
-101:	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
-102:	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
-103:	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
-104:	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
-105:	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
-106:	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
-107:	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
-108:	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
-109:	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
-110:	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
-111:	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-112:	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-113:	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-114:	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-115:	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-116:	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-117:	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-118:	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
-119:	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
-120:	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
-121:	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
-122:	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
-123:	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-124:	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
-125:	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
-126:	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
-127:	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
-128:	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-129:	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-130:Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
-131:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:459: error: 'else' without 'if'
-134:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:484: error: 'else' without 'if'
-137:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: <identifier> expected
-140:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: -> expected
-143:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: ';' expected
-146:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: <identifier> expected
-149:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: -> expected
-152:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: ';' expected
-155:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: <identifier> expected
-158:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: -> expected
-162:	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:89)
-163:	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
-164:	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
-165:	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
-166:	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
-167:	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:52)
-168:	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:38)
-169:	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
-170:	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
-171:	at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
-172:	at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:206)
-173:	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
-174:	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilerFactory.lambda$createRebuildAllCompiler$0(IncrementalCompilerFactory.java:55)
-175:	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:70)
-176:	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:44)
-177:	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:66)
-178:	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:52)
-179:	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:64)
-180:	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:48)
-181:	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-182:	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-183:	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-184:	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-185:	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-186:	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-187:	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-188:	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:48)
-189:	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:224)
-190:	at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:165)
-191:	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:150)
-192:	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-193:	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
-194:	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
-195:	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
-196:	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
-197:	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
-198:	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
-199:	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
-200:	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
-201:	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-202:	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-203:	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-204:	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-205:	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-206:	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
-207:	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
-208:	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
-209:	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
-210:	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
-211:	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
-212:	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
-213:	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
-214:	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-215:	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-216:	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-217:	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-218:	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-219:	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-220:	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-221:	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
-222:	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
-223:	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
-224:	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
-225:	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
-226:	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
-227:	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
-228:	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
-229:	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
-230:	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
-231:	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
-232:	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
-233:	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
-234:	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
-235:	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
-236:	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
-237:	at org.gradle.internal.execution.steps.BuildCacheStep.executeAndStoreInCache(BuildCacheStep.java:145)
-238:	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$executeWithCache$4(BuildCacheStep.java:101)
-239:	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$executeWithCache$5(BuildCacheStep.java:101)
-240:	at org.gradle.internal.Try$Success.map(Try.java:175)
-241:	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithCache(BuildCacheStep.java:85)
-242:	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$0(BuildCacheStep.java:74)
-243:	at org.gradle.internal.Either$Left.fold(Either.java:115)
-244:	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
-245:	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+18:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:11: error: cannot find symbol
+23:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:16: error: cannot find symbol
+28:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:14: error: cannot find symbol
+33:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:12: error: cannot find symbol
+38:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:31: error: cannot find symbol
+43:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:7: error: cannot find symbol
+48:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:69: error: cannot find symbol
+53:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryTimeCalculator.java:25: error: cannot find symbol
+58:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryTimeCalculator.java:38: error: cannot find symbol
+63:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:35: error: cannot find symbol
+68:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:36: error: cannot find symbol
+73:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:41: error: cannot find symbol
+78:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:42: error: cannot find symbol
+83:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:47: error: cannot find symbol
+88:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:63: error: cannot find symbol
+93:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:126: error: cannot find symbol
+98:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:132: error: cannot find symbol
+103:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/frame/DeliveryFrameService.java:84: error: cannot find symbol
+108:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/frame/DeliveryFrameService.java:147: error: cannot find symbol
+113:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: cannot find symbol
+118:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:69: error: cannot find symbol
+123:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:105: error: cannot find symbol
+128:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:289: error: cannot find symbol
+133:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:319: error: cannot find symbol
+138:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:329: error: cannot find symbol
+143:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:338: error: cannot find symbol
+148:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:363: error: cannot find symbol
+153:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:367: error: cannot find symbol
+158:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:438: error: cannot find symbol
+163:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: cannot find symbol
+168:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: cannot find symbol
+173:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:570: error: cannot find symbol
+178:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:587: error: cannot find symbol
+183:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:594: error: cannot find symbol
+188:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:599: error: cannot find symbol
+193:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:161: error: cannot find symbol
+198:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:165: error: cannot find symbol
+202:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:169: error: cannot find symbol
+207:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:173: error: cannot find symbol
+211:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:41: error: cannot find symbol
+216:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:84: error: cannot find symbol
+221:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:98: error: cannot find symbol
+226:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:133: error: cannot find symbol
+231:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:138: error: cannot find symbol
+236:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:74: error: incompatible types: @org.jetbrains.annotations.NotNull Component cannot be converted to String
+239:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:99: error: cannot find symbol
+244:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:107: error: cannot find symbol
+249:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:117: error: cannot find symbol
+254:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:121: error: cannot find symbol
+259:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:125: error: cannot find symbol
+264:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:58: error: cannot find symbol
+269:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:64: error: cannot find symbol
+274:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:76: error: cannot find symbol
+279:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:80: error: cannot find symbol
+284:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:143: error: cannot find symbol
+289:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:51: error: cannot find symbol
+294:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:58: error: cannot find symbol
+299:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:86: error: cannot find symbol
+304:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:131: error: cannot find symbol
+309:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:135: error: incompatible types: List<CAP#1> cannot be converted to @org.jetbrains.annotations.NotNull List<Player>
+314:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:146: error: cannot find symbol
+319:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:45: error: cannot find symbol
+324:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:51: error: cannot find symbol
+329:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:62: error: cannot find symbol
+334:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/command/KasaneCommand.java:83: error: cannot find symbol
+339:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:39: error: package PlayerItemFrameChangeEvent does not exist
+342:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:54: error: cannot find symbol
+347:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:93: error: cannot find symbol
+352:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:109: error: cannot find symbol
+357:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:129: error: cannot find symbol
+362:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:36: error: cannot find symbol
+367:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:63: error: cannot find symbol
+372:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:75: error: package EntityRemoveEvent does not exist
+378:> Task :compileJava FAILED
+388:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:74: error: incompatible types: @org.jetbrains.annotations.NotNull Component cannot be converted to String
+391:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:135: error: incompatible types: List<CAP#1> cannot be converted to @org.jetbrains.annotations.NotNull List<Player>
+396:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:11: error: cannot find symbol
+401:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:16: error: cannot find symbol
+406:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:14: error: cannot find symbol
+411:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:12: error: cannot find symbol
+416:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:31: error: cannot find symbol
+421:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:7: error: cannot find symbol
+426:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:69: error: cannot find symbol
+431:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:161: error: cannot find symbol
+436:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:169: error: cannot find symbol
+441:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:107: error: cannot find symbol
+446:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:80: error: cannot find symbol
+451:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:146: error: cannot find symbol
+457:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:165: error: cannot find symbol
+461:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:173: error: cannot find symbol
+465:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:39: error: package PlayerItemFrameChangeEvent does not exist
+468:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:75: error: package EntityRemoveEvent does not exist
+471:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryTimeCalculator.java:25: error: cannot find symbol
+476:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryTimeCalculator.java:38: error: cannot find symbol
+481:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:35: error: cannot find symbol
+486:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:36: error: cannot find symbol
+491:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:41: error: cannot find symbol
+496:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:42: error: cannot find symbol
+501:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:47: error: cannot find symbol
+506:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:63: error: cannot find symbol
+511:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:126: error: cannot find symbol
+516:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:132: error: cannot find symbol
+521:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/frame/DeliveryFrameService.java:84: error: cannot find symbol
+526:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/frame/DeliveryFrameService.java:147: error: cannot find symbol
+531:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: cannot find symbol
+536:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:69: error: cannot find symbol
+541:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:105: error: cannot find symbol
+546:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:289: error: cannot find symbol
+551:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:319: error: cannot find symbol
+556:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:329: error: cannot find symbol
+561:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:338: error: cannot find symbol
+566:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:363: error: cannot find symbol
+571:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:367: error: cannot find symbol
+576:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:438: error: cannot find symbol
+581:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: cannot find symbol
+586:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: cannot find symbol
+591:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:570: error: cannot find symbol
+596:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:587: error: cannot find symbol
+601:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:594: error: cannot find symbol
+606:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:599: error: cannot find symbol
+611:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:41: error: cannot find symbol
+616:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:84: error: cannot find symbol
+621:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:98: error: cannot find symbol
+626:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:133: error: cannot find symbol
+631:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:138: error: cannot find symbol
+636:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:99: error: cannot find symbol
+641:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:117: error: cannot find symbol
+646:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:121: error: cannot find symbol
+651:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:125: error: cannot find symbol
+656:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:58: error: cannot find symbol
+661:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:64: error: cannot find symbol
+666:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:76: error: cannot find symbol
+671:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:143: error: cannot find symbol
+676:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:51: error: cannot find symbol
+681:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:58: error: cannot find symbol
+686:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:86: error: cannot find symbol
+691:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:131: error: cannot find symbol
+696:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:45: error: cannot find symbol
+701:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:51: error: cannot find symbol
+706:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:62: error: cannot find symbol
+711:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/command/KasaneCommand.java:83: error: cannot find symbol
+716:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:54: error: cannot find symbol
+721:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:93: error: cannot find symbol
+726:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:109: error: cannot find symbol
+731:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:129: error: cannot find symbol
+736:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:36: error: cannot find symbol
+741:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:63: error: cannot find symbol
+752:* Exception is:
+753:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileJava'.
+754:	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
 
 ===== tail -120 =====
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
@@ -271,5 +271,5 @@ date: 2026-09-29T09:51:23Z
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 
 
-BUILD FAILED in 40s
+BUILD FAILED in 32s
 1 actionable task: 1 executed
