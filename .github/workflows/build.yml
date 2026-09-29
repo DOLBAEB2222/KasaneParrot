@@ -32,7 +32,7 @@ jobs:
           ./gradlew build --no-daemon --stacktrace 2>&1 | tee build.log
 
       - name: Publish error report
-        if: failure()
+        if: failure() && github.event_name == 'push'
         run: |
           mkdir -p ci-logs
           {
@@ -43,15 +43,15 @@ jobs:
             echo
             echo "===== tail -120 ====="
             tail -120 build.log
-          } > "ci-logs/last-build.log"
+          } > ci-logs/last-build.log
           git config user.name "ci-bot"
           git config user.email "ci-bot@users.noreply.github.com"
-          git add ci-logs
+          git add -f ci-logs
           git commit -m "ci: отчёт сборки [ci skip]" || echo "nothing to commit"
-          git push
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Cleanup old report
-        if: success()
+        if: success() && github.event_name == 'push'
         run: |
           if [ -d ci-logs ]; then
             git config user.name "ci-bot"
@@ -59,7 +59,7 @@ jobs:
             git rm -r --cached ci-logs || true
             rm -rf ci-logs
             git commit -m "ci: очистка отчёта [ci skip]" || echo "nothing to commit"
-            git push
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           else
             echo "no logs to clean"
           fi
