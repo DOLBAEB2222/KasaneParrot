@@ -53,7 +53,7 @@ public final class LandingSpotFinder {
         }
 
         // 2. Кольца вокруг игрока: радиусы от min-distance до scan-radius.
-        for (double radius = scan.minDistance; radius <= scan.radius + 0.01D; radius += 2.0D) {
+        for (double radius = scan.minDistance; radius <= scan.scanRadius + 0.01D; radius += 2.0D) {
             int points = Math.max(6, (int) (radius * 4));
             for (int i = 0; i < points; i++) {
                 double angle = (Math.PI * 2.0D * i) / points;
