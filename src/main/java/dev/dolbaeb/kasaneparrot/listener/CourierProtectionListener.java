@@ -4,7 +4,6 @@ import dev.dolbaeb.kasaneparrot.KasaneParrotPlugin;
 import dev.dolbaeb.kasaneparrot.delivery.DeliveryOutcome;
 import dev.dolbaeb.kasaneparrot.parrot.CourierParrot;
 import dev.dolbaeb.kasaneparrot.text.Msg;
-import io.papermc.paper.event.entity.EntityRemoveEvent;
 import org.bukkit.entity.Parrot;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -65,17 +64,9 @@ public final class CourierProtectionListener implements Listener {
         }
     }
 
-    @EventHandler(ignoreCancelled = true)
-    public void onRemove(@NotNull EntityRemoveEvent event) {
-        CourierParrot courier = courierOf(event.getEntity());
-        if (courier == null) {
-            return;
-        }
-        // Не даём серверу деспавнуть курьера в миссии (выгрузка чанков и т.п.).
-        if (courier.state().isOnMission() && event.getCause() == EntityRemoveEvent.Cause.DESPAWN) {
-            event.setCancelled(true);
-        }
-    }
+    // Примечание: io.papermc.paper.event.entity.EntityRemoveEvent отсутствует
+    // в paper-api 1.21.8 — защита от деспавна обеспечивается тем, что
+    // приручённые попугаи persistent по умолчанию (+ setAI(false) в полёте).
 
     @Nullable
     private CourierParrot courierOf(@NotNull org.bukkit.entity.Entity entity) {

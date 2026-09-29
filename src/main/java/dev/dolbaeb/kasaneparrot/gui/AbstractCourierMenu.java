@@ -66,12 +66,18 @@ public abstract class AbstractCourierMenu {
         plugin.menuService().register(this);
     }
 
-    /** Живое обновление: контент + заголовок, окно не закрывается. */
+    /**
+     * Живое обновление контента без закрытия окна.
+     *
+     * <p>Примечание: смена заголовка открытого окна в Paper 1.21.8
+     * невозможна чистым API ({@code setTitle} принимает только String и
+     * помечен как сломанный), поэтому заголовок фиксируется при открытии,
+     * а динамические данные (список игроков) живут в слотах.</p>
+     */
     public final void refresh() {
         if (!isOpen()) {
             return;
         }
-        view.setTitle(renderTitle());
         render();
     }
 

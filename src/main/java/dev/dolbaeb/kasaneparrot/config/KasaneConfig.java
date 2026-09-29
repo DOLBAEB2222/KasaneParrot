@@ -20,16 +20,16 @@ import java.util.Set;
  */
 public final class KasaneConfig {
 
-    public final boolean debug;
+    private final boolean debug;
     public final String language;
 
-    public final ParrotCfg parrot;
-    public final PouchCfg pouch;
-    public final DeliveryCfg delivery;
-    public final FlightCfg flight;
-    public final GuiCfg gui;
-    public final ResourcePackCfg resourcePack;
-    public final StorageCfg storage;
+    private final ParrotCfg parrot;
+    private final PouchCfg pouch;
+    private final DeliveryCfg delivery;
+    private final FlightCfg flight;
+    private final GuiCfg gui;
+    private final ResourcePackCfg resourcePack;
+    private final StorageCfg storage;
 
     private KasaneConfig(@NotNull FileConfiguration c) {
         this.debug = c.getBoolean("debug", false);
@@ -46,6 +46,38 @@ public final class KasaneConfig {
     public static KasaneConfig load(@NotNull JavaPlugin plugin) {
         plugin.reloadConfig();
         return new KasaneConfig(plugin.getConfig());
+    }
+
+    public boolean debug() {
+        return debug;
+    }
+
+    public ParrotCfg parrot() {
+        return parrot;
+    }
+
+    public PouchCfg pouch() {
+        return pouch;
+    }
+
+    public DeliveryCfg delivery() {
+        return delivery;
+    }
+
+    public FlightCfg flight() {
+        return flight;
+    }
+
+    public GuiCfg gui() {
+        return gui;
+    }
+
+    public ResourcePackCfg resourcePack() {
+        return resourcePack;
+    }
+
+    public StorageCfg storage() {
+        return storage;
     }
 
     /* ------------------------------------------------------------------ */

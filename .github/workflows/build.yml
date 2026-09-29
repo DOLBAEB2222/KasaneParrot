@@ -39,7 +39,7 @@ jobs:
             echo "commit: $GITHUB_SHA"
             echo "date: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             echo
-            grep -nE "error:|warning:|FAILED|Exception|\.java:" build.log | head -150 || true
+            grep -nE -A6 "error:" build.log | head -400 || true
             echo
             echo "===== tail -120 ====="
             tail -120 build.log

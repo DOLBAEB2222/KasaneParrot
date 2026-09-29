@@ -35,6 +35,10 @@ public final class DeliverySession {
     /** Итог. */
     private DeliveryOutcome outcome = DeliveryOutcome.PENDING;
     private String failureReason = "";
+    /** Попугай уже телепортирован к хозяину и снижается (фаза возврата). */
+    private boolean nearOwner;
+    /** Отправителю уже сообщили, что получатель вышел. */
+    private boolean notifiedTargetGone;
 
     private DeliverySession(@NotNull UUID id,
                             @NotNull DeliveryRequest request,
