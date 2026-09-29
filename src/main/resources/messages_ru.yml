@@ -1,0 +1,80 @@
+# ================================================================
+#  KasaneParrot — сообщения (MiniMessage)
+#  Плейсхолдеры указаны у каждой строки в комментарии.
+# ================================================================
+
+prefix: "<gradient:#ff69b4:#8a2be2>Kasane</gradient> <dark_gray>»</dark_gray> "
+
+generic:
+  no-permission: "<red>Недостаточно прав.</red>"
+  players-only: "<red>Эта команда доступна только игрокам.</red>"
+  unknown-player: "<red>Игрок <white>{name}</white> не найден.</red>"
+  reloaded: "<green>Конфигурация и сообщения перезагружены за <white>{ms} мс</white>.</green>"
+
+parrot:
+  not-a-parrot: "<red>Это не попугай.</red>"
+  not-tamed: "<red>Этот попугай ещё не приручён. Покормите его семечками.</red>"
+  not-your-parrot: "<red>Это не ваш попугай.</red>"
+  already-courier: "<yellow>У этого попугая уже надет мешочек.</yellow>"
+  # {name} — имя попугая
+  pouched: "<green>Мешочек надет!</green> <gray>{name} — теперь Kasane-курьер.</gray>"
+  courier-name: "Kasane {owner}"
+
+pouch:
+  # {material} — требуемый предмет
+  wrong-item: "<red>Нужен мешочек (<white>{material}</white>).</red>"
+  cant-afford: "<red>Мешочек пропал из руки.</red>"
+
+delivery:
+  payload-required: "<red>Возьмите в руку предмет, который хотите отправить.</red>"
+  # {material} — запрещённый предмет
+  payload-blacklisted: "<red>Предмет <white>{material}</white> запрещён к отправке.</red>"
+  # {target} {time}
+  started: "<green>Попугай взлетел!</green> <gray>Доставка для <white>{target}</white> займёт ~<white>{time}</white>.</gray>"
+  target-is-self: "<red>Нельзя отправить посылку самому себе.</red>"
+  target-gone: "<yellow>Получатель вышел с сервера. {action}</yellow>"
+  action-respawn: "Попугай доставит посылку к точке спавна."
+  action-return: "Попугай вернёт посылку отправителю."
+  action-wait: "Попугай подождёт игрока."
+  # {sender}
+  arriving: "<yellow>К вам летит Kasane-попугай с посылкой от <white>{sender}</white>!</yellow>"
+  # {target}
+  delivered: "<green>Посылка доставлена: <white>{target}</white> получил предмет.</green>"
+  # {reason}
+  failed: "<red>Доставка не удалась: {reason}. Посылка возвращена.</red>"
+  returned: "<yellow>Попугай вернулся с посылкой.</yellow>"
+  reason-no-landing: "не удалось найти место для посадки"
+  reason-timeout: "получатель так и не остановился"
+  reason-parrot-lost: "попугай потерялся в полёте"
+  reason-cancelled: "отправка отменена"
+
+gui:
+  select-info-name: "<gold>Онлайн: <white>{online}</white></gold>"
+  select-info-lore:
+    - "<gray>Выберите игрока, которому</gray>"
+    - "<gray>отправить посылку.</gray>"
+    - ""
+    - "<yellow>Страница {page}/{pages}</yellow>"
+  prev-page: "<yellow>← Назад</yellow>"
+  next-page: "<yellow>Вперёд →</yellow>"
+  destination-player-name: "<gold>К игроку</gold>"
+  destination-player-lore:
+    - "<gray>Попугай найдёт получателя,</gray>"
+    - "<gray>где бы тот ни находился.</gray>"
+  destination-spawn-name: "<gold>К точке спавна</gold>"
+  destination-spawn-lore:
+    - "<gray>Попугай доставит посылку к точке</gray>"
+    - "<gray>возрождения получателя (кровать/якорь).</gray>"
+  destination-spawn-unavailable: "<red>У получателя нет точки спавна.</red>"
+  confirm-name: "<green>✔ Отправить</green>"
+  confirm-lore:
+    - "<gray>Попугай доставит предмет</gray>"
+    - "<gray>получателю <white>{target}</white>.</gray>"
+    - "<gray>Время в пути: ~<white>{time}</white></gray>"
+  cancel-name: "<red>✖ Отмена</red>"
+  cancel-lore:
+    - "<gray>Вернуться без отправки.</gray>"
+  payload-name: "<white>{item}</white>"
+  payload-lore:
+    - "<gray>Содержимое посылки.</gray>"
+  target-none: "<red>Получатель не выбран.</red>"

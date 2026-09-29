@@ -1,0 +1,26 @@
+name: KasaneParrot
+version: '${version}'
+main: dev.dolbaeb.kasaneparrot.KasaneParrotPlugin
+api-version: '1.21'
+description: 'Почтовая служба Kasane-попугаев: приручите попугая, наденьте мешочек и отправляйте предметы игрокам.'
+authors: [DOLBAEB2222]
+website: https://github.com/DOLBAEB2222/KasaneParrot
+folia-supported: false
+
+commands:
+  kasane:
+    description: 'Управление почтовой службой Kasane-попугаев'
+    usage: '/kasane <reload|status|pack|help>'
+    aliases: [kp, kasaneparrot]
+    permission: kasaneparrot.command
+
+permissions:
+  kasaneparrot.command:
+    description: 'Доступ к команде /kasane'
+    default: true
+  kasaneparrot.use:
+    description: 'Надевать мешочек и отправлять доставки'
+    default: true
+  kasaneparrot.admin:
+    description: 'Администрирование плагина (reload, status, pack)'
+    default: op

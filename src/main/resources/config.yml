@@ -1,0 +1,201 @@
+# ================================================================
+#   KasaneParrot — почтовая служба Kasane-попугаев
+#   Целевая версия: Paper 1.21.8 | Конфиг v1
+#
+#   Как это работает:
+#     1) Приручите попугая (ванильные семечки: пшеница/тыква/дыня/свёкла)
+#     2) Shift+ПКМ мешочком (Bundle) по СВОЕМУ приручённому попугаю —
+#        мешочек надевается НАВСЕГДА, моделька меняется
+#     3) ПКМ по попугаю с предметом в руке (или Shift+ПКМ) — меню отправки:
+#        список онлайн-игроков → выбор игрока → выбор места
+#        (к игроку / к его точке спавна) → подтверждение
+#     4) Попугай взлетает на 100 блоков и исчезает. Время доставки
+#        считается по расстоянию между игроками (от 30 сек до 5 минут)
+#     5) Попугай появляется в 50 блоках над целью и плавно садится
+#        (умный анализ активности цели), оставляет предмет в невидимой
+#        рамке. ЛКМ по рамке — предмет выпадает, рамка исчезает
+#     6) Попугай улетает вверх, возвращается к хозяину и садится на плечо
+# ================================================================
+
+# Отладочный режим: больше логов в консоль
+debug: false
+
+# Язык сообщений (messages_<lang>.yml в папке плагина)
+language: "ru"
+
+parrot:
+  model:
+    # Вариант попугая после надевания мешочка (курьерский вид).
+    # Варианты: RED | BLUE | GREEN | CYAN | GRAY
+    # С ресурспаком «Pesky Parrots» у каждого варианта своя текстура,
+    # поэтому смена варианта = смена «модельки».
+    courier-variant: "CYAN"
+    # Вариант после первой успешной доставки («обычный Kasane-попугай»)
+    after-delivery-variant: "GRAY"
+  name:
+    # Показывать кастомное имя над попугаем
+    enabled: true
+    # MiniMessage-формат имени. {owner} — ник хозяина.
+    normal-format: "<italic><#31d8e0>Kasane {owner}"
+    courier-format: "<italic><bold><#e6b800>✉ Kasane {owner}"
+  protection:
+    # Попугай-курьер не получает урон, пока находится в полёте
+    invulnerable-while-delivering: true
+    # Запретить курьеру проходить в порталы
+    block-portals: true
+
+pouch:
+  # Предмет-мешочек (по ТЗ — ванильный Bundle, крафтится в ванили)
+  material: "BUNDLE"
+  # Расходовать мешочек при надевании (сам мешочек не вернуть — навсегда)
+  consume-on-attach: true
+  # Надевать мешочек можно только на СВОЕГО приручённого попугая
+  require-owner: true
+  # Сразу после надевания открыть меню отправки
+  open-menu-after-attach: true
+
+delivery:
+  time:
+    # Время доставки = расстояние между отправителем и получателем,
+    # интерполированное на диапазон [min-seconds .. max-seconds]
+    min-seconds: 30
+    max-seconds: 300
+    # Расстояния (в блоках) для интерполяции
+    min-distance: 50
+    max-distance: 3000
+    # Отправка в другой мир/измерение (расстояние неизвестно)
+    cross-world-seconds: 300
+  target:
+    # Разрешить отправку самому себе (удобно для тестов)
+    allow-self: false
+    # Политика, если получатель вышел во время доставки:
+    #   DELIVER_TO_RESPAWN — доставить к точке спавна получателя (если есть)
+    #   RETURN_TO_SENDER   — вернуть предмет отправителю
+    #   WAIT               — ждать повторного входа (wait-timeout-seconds)
+    offline-policy: "WAIT"
+    wait-timeout-seconds: 120
+    # Сообщать получателю, что к нему летит попугай
+    announce-arrival: true
+  payload:
+    # Забирать из руки весь стак (false — ровно один предмет)
+    take-whole-stack: true
+    # Предметы, запрещённые к отправке
+    blacklisted-materials:
+      - "BUNDLE"
+  frame:
+    # Невидимая рамка: предмет «лежит» на земле
+    invisible: true
+    # Подсветить рамку (glowing) для заметности
+    glowing: false
+    # ЛКМ по рамке: предмет выпадает на землю, рамка исчезает
+    drop-on-left-click: true
+    # Секунды до автосброса предмета на землю (0 = рамка висит вечно)
+    lifetime-seconds: 300
+
+flight:
+  # Период обновления полёта (в тиках; 1 = каждый тик)
+  tick-period: 1
+  ascend:
+    # Высота взлёта перед исчезновением (блоков)
+    height: 100
+    # Скорость взлёта (блоков/тик)
+    speed: 0.9
+    # Взлёт по спирали радиуса N (0 = вертикально)
+    spiral-radius: 6.0
+    # Кривая разгона/торможения: LINEAR | EASE_IN_OUT_CUBIC | SMOOTHSTEP
+    easing: "EASE_IN_OUT_CUBIC"
+  approach:
+    # Точка появления — на N блоков выше цели
+    height-above-target: 50
+    # Скорость снижения (блоков/тик)
+    descent-speed: 0.65
+    # Дистанция «висения» рядом с бегущим игроком
+    hover-distance: 2.5
+  landing:
+    # Сколько секунд ждать, пока цель остановится (бег/элитры/транспорт)
+    max-wait-seconds: 45
+    # Пересчёт стратегии посадки каждые N тиков
+    re-evaluate-ticks: 20
+    # Действие при невозможности посадки: RETURN | DROP_IN_AIR
+    timeout-action: "RETURN"
+    scan:
+      # Радиус поиска безопасного места вокруг цели (блоков)
+      radius: 8
+      # Минимальная дистанция посадки от цели (чтобы не в упор)
+      min-distance: 2.0
+      # Не садиться в воду
+      avoid-water: true
+      # Опасные блоки: на них и над ними не садимся
+      forbidden-materials:
+        - "LAVA"
+        - "MAGMA_BLOCK"
+        - "CACTUS"
+        - "CAMPFIRE"
+        - "SOUL_CAMPFIRE"
+        - "FIRE"
+        - "SOUL_FIRE"
+        - "POWDER_SNOW"
+        - "SWEET_BERRY_BUSH"
+        - "WITHER_ROSE"
+  return:
+    # Высота появления возле хозяина (блоков)
+    height: 100
+    # Сесть на плечо по возвращении
+    perch-on-shoulder: true
+    # Плечо: LEFT | RIGHT | AUTO (менее занятое)
+    shoulder-side: "AUTO"
+
+gui:
+  # Заполнитель пустых слотов (Material)
+  filler: "GRAY_STAINED_GLASS_PANE"
+  sounds:
+    click: "minecraft:ui.loom.select_pattern"
+    success: "minecraft:entity.player.levelup"
+    error: "minecraft:entity.villager.no"
+  select-menu:
+    # Заголовок окна выбора получателя (MiniMessage)
+    title: "<dark_red>Почта Kasane — выбор получателя"
+    # Строк в меню (1..6)
+    rows: 6
+    # Показывать отправителя в списке
+    show-self: false
+    # Живое обновление списка при входе/выходе игроков
+    live-update: true
+    # Задержка обновления после join/quit (в тиках; схлопывает очередь событий)
+    refresh-delay-ticks: 1
+    icons:
+      prev-page: "SPECTRAL_ARROW"
+      next-page: "ARROW"
+      info: "BOOK"
+  destination-menu:
+    title: "<dark_red>Куда доставить?"
+    rows: 3
+    icons:
+      to-player: "COMPASS"
+      to-spawn: "RED_BED"
+  confirm-menu:
+    title: "<dark_red>Подтверждение отправки"
+    rows: 3
+    icons:
+      confirm: "LIME_DYE"
+      cancel: "BARRIER"
+
+resource-pack:
+  # Выдача ресурспака игрокам: NONE | PROMPT | FORCE
+  mode: "NONE"
+  # Прямая ссылка на zip (например, «Pesky Parrots.zip», размещённый на хостинге)
+  url: ""
+  # SHA-1 хеш файла (обязателен для FORCE)
+  sha1: ""
+  # Приглашение (MiniMessage)
+  prompt: "<green>Для Kasane-попугаев нужен ресурспак с текстурами</green>"
+  # Выкинуть игрока при отказе (только для FORCE)
+  kick-on-decline: false
+
+storage:
+  # Формат хранения активных доставок и истории (пока только YAML)
+  type: "YAML"
+  # Интервал автосохранения (сек)
+  save-interval-seconds: 60
+  # Сколько последних доставок хранить в истории
+  history-size: 50
