@@ -162,7 +162,7 @@ public final class KasaneConfig {
         public final AscendCfg ascend;
         public final ApproachCfg approach;
         public final LandingCfg landing;
-        public final ReturnCfg ret;
+        public final ReturnCfg returning;
 
         public static final class AscendCfg {
             public final double height;
@@ -227,7 +227,7 @@ public final class KasaneConfig {
             this.ascend = new AscendCfg(section(c, "flight.ascend"));
             this.approach = new ApproachCfg(section(c, "flight.approach"));
             this.landing = new LandingCfg(section(c, "flight.landing"));
-            this.ret = new ReturnCfg(section(c, "flight.return"));
+            this.returning = new ReturnCfg(section(c, "flight.return"));
         }
 
         private static ConfigurationSection section(FileConfiguration c, String path) {

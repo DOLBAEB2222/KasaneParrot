@@ -454,7 +454,7 @@ public final class DeliveryService implements PluginModule {
             // TODO(этап 2): спуск к хозяину по дуге, а не мгновенный телепорт.
             parrot.teleport(owner.getLocation());
             plugin.modelService().applyAfterDeliveryModel(parrot, owner);
-            if (plugin.cfg().flight().return().perchOnShoulder) {
+            if (plugin.cfg().flight().returning().perchOnShoulder) {
                 plugin.shoulderService().perch(owner, parrot);
             } else {
                 parrot.setSitting(true);
@@ -479,7 +479,7 @@ public final class DeliveryService implements PluginModule {
         Parrot parrot = courier.entity();
         if (courier.isAlive()) {
             parrot.teleport(owner.getLocation());
-            if (plugin.cfg().flight().return().perchOnShoulder) {
+            if (plugin.cfg().flight().returning().perchOnShoulder) {
                 plugin.shoulderService().perch(owner, parrot);
             } else {
                 parrot.setSitting(true);
