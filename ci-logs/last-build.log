@@ -1,187 +1,408 @@
-commit: 529172f03fb4d8f5fec0e9888e30ef697a22a0cd
-date: 2026-09-29T09:54:19Z
+commit: a30f3eb47741f980b3b21daab1a93cf8952a393b
+date: 2026-09-29T09:58:34Z
 
 18:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:11: error: cannot find symbol
+19-import org.bukkit.inventory.ItemMeta;
+20-                           ^
+21-  symbol:   class ItemMeta
+22-  location: package org.bukkit.inventory
 23:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:16: error: cannot find symbol
+24-import org.bukkit.inventory.ItemMeta;
+25-                           ^
+26-  symbol:   class ItemMeta
+27-  location: package org.bukkit.inventory
 28:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:14: error: cannot find symbol
+29-import org.bukkit.inventory.ItemMeta;
+30-                           ^
+31-  symbol:   class ItemMeta
+32-  location: package org.bukkit.inventory
 33:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:12: error: cannot find symbol
+34-import org.bukkit.event.player.PlayerItemFrameChangeEvent;
+35-                              ^
+36-  symbol:   class PlayerItemFrameChangeEvent
+37-  location: package org.bukkit.event.player
 38:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:31: error: cannot find symbol
-43:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:7: error: cannot find symbol
-48:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:69: error: cannot find symbol
-53:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryTimeCalculator.java:25: error: cannot find symbol
-58:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryTimeCalculator.java:38: error: cannot find symbol
-63:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:35: error: cannot find symbol
-68:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:36: error: cannot find symbol
-73:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:41: error: cannot find symbol
-78:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:42: error: cannot find symbol
-83:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:47: error: cannot find symbol
-88:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:63: error: cannot find symbol
-93:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:126: error: cannot find symbol
-98:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:132: error: cannot find symbol
-103:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/frame/DeliveryFrameService.java:84: error: cannot find symbol
-108:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/frame/DeliveryFrameService.java:147: error: cannot find symbol
-113:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: cannot find symbol
-118:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:69: error: cannot find symbol
-123:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:105: error: cannot find symbol
-128:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:289: error: cannot find symbol
-133:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:319: error: cannot find symbol
-138:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:329: error: cannot find symbol
-143:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:338: error: cannot find symbol
-148:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:363: error: cannot find symbol
-153:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:367: error: cannot find symbol
-158:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:438: error: cannot find symbol
-163:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: cannot find symbol
-168:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: cannot find symbol
-173:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:570: error: cannot find symbol
-178:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:587: error: cannot find symbol
-183:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:594: error: cannot find symbol
-188:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:599: error: cannot find symbol
-193:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:161: error: cannot find symbol
-198:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:165: error: cannot find symbol
-202:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:169: error: cannot find symbol
-207:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:173: error: cannot find symbol
-211:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:41: error: cannot find symbol
-216:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:84: error: cannot find symbol
-221:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:98: error: cannot find symbol
-226:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:133: error: cannot find symbol
-231:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:138: error: cannot find symbol
-236:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:74: error: incompatible types: @org.jetbrains.annotations.NotNull Component cannot be converted to String
-239:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:99: error: cannot find symbol
-244:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:107: error: cannot find symbol
-249:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:117: error: cannot find symbol
-254:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:121: error: cannot find symbol
-259:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:125: error: cannot find symbol
-264:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:58: error: cannot find symbol
-269:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:64: error: cannot find symbol
-274:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:76: error: cannot find symbol
-279:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:80: error: cannot find symbol
-284:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:143: error: cannot find symbol
-289:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:51: error: cannot find symbol
-294:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:58: error: cannot find symbol
-299:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:86: error: cannot find symbol
-304:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:131: error: cannot find symbol
-309:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:135: error: incompatible types: List<CAP#1> cannot be converted to @org.jetbrains.annotations.NotNull List<Player>
-314:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:146: error: cannot find symbol
-319:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:45: error: cannot find symbol
-324:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:51: error: cannot find symbol
-329:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:62: error: cannot find symbol
-334:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/command/KasaneCommand.java:83: error: cannot find symbol
-339:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:39: error: package PlayerItemFrameChangeEvent does not exist
-342:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:54: error: cannot find symbol
-347:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:93: error: cannot find symbol
-352:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:109: error: cannot find symbol
-357:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:129: error: cannot find symbol
-362:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:36: error: cannot find symbol
-367:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:63: error: cannot find symbol
-372:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:75: error: package EntityRemoveEvent does not exist
-378:> Task :compileJava FAILED
-388:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:74: error: incompatible types: @org.jetbrains.annotations.NotNull Component cannot be converted to String
-391:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:135: error: incompatible types: List<CAP#1> cannot be converted to @org.jetbrains.annotations.NotNull List<Player>
-396:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:11: error: cannot find symbol
-401:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:16: error: cannot find symbol
-406:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:14: error: cannot find symbol
-411:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:12: error: cannot find symbol
-416:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:31: error: cannot find symbol
-421:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:7: error: cannot find symbol
-426:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:69: error: cannot find symbol
-431:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:161: error: cannot find symbol
-436:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:169: error: cannot find symbol
-441:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:107: error: cannot find symbol
-446:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:80: error: cannot find symbol
-451:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:146: error: cannot find symbol
-457:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:165: error: cannot find symbol
-461:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliverySession.java:173: error: cannot find symbol
-465:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:39: error: package PlayerItemFrameChangeEvent does not exist
-468:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:75: error: package EntityRemoveEvent does not exist
-471:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryTimeCalculator.java:25: error: cannot find symbol
-476:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryTimeCalculator.java:38: error: cannot find symbol
-481:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:35: error: cannot find symbol
-486:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:36: error: cannot find symbol
-491:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:41: error: cannot find symbol
-496:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:42: error: cannot find symbol
-501:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:47: error: cannot find symbol
-506:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/parrot/ParrotModelService.java:63: error: cannot find symbol
-511:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:126: error: cannot find symbol
-516:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:132: error: cannot find symbol
-521:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/frame/DeliveryFrameService.java:84: error: cannot find symbol
-526:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/frame/DeliveryFrameService.java:147: error: cannot find symbol
-531:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: cannot find symbol
-536:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:69: error: cannot find symbol
-541:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:105: error: cannot find symbol
-546:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:289: error: cannot find symbol
-551:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:319: error: cannot find symbol
-556:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:329: error: cannot find symbol
-561:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:338: error: cannot find symbol
-566:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:363: error: cannot find symbol
-571:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:367: error: cannot find symbol
-576:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:438: error: cannot find symbol
-581:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: cannot find symbol
-586:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: cannot find symbol
-591:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:570: error: cannot find symbol
-596:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:587: error: cannot find symbol
-601:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:594: error: cannot find symbol
-606:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:599: error: cannot find symbol
-611:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:41: error: cannot find symbol
-616:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:84: error: cannot find symbol
-621:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:98: error: cannot find symbol
-626:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:133: error: cannot find symbol
-631:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:138: error: cannot find symbol
-636:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:99: error: cannot find symbol
-641:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:117: error: cannot find symbol
-646:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:121: error: cannot find symbol
-651:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:125: error: cannot find symbol
-656:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:58: error: cannot find symbol
-661:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:64: error: cannot find symbol
-666:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:76: error: cannot find symbol
-671:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:143: error: cannot find symbol
-676:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:51: error: cannot find symbol
-681:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:58: error: cannot find symbol
-686:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:86: error: cannot find symbol
-691:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:131: error: cannot find symbol
-696:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:45: error: cannot find symbol
-701:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:51: error: cannot find symbol
-706:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:62: error: cannot find symbol
-711:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/command/KasaneCommand.java:83: error: cannot find symbol
-716:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:54: error: cannot find symbol
-721:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:93: error: cannot find symbol
-726:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:109: error: cannot find symbol
-731:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/ParrotInteractListener.java:129: error: cannot find symbol
-736:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:36: error: cannot find symbol
-741:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/CourierProtectionListener.java:63: error: cannot find symbol
-752:* Exception is:
-753:org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileJava'.
-754:	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+39-    public void onItemFrameChange(@NotNull PlayerItemFrameChangeEvent event) {
+40-                                           ^
+41-  symbol:   class PlayerItemFrameChangeEvent
+42-  location: class FrameInteractionListener
+43:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:126: error: cannot find symbol
+44-        if (!plugin.cfg().gui().select().liveUpdate) {
+45-                               ^
+46-  symbol:   method select()
+47-  location: class GuiCfg
+48:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:132: error: cannot find symbol
+49-        long delay = plugin.cfg().gui().select().refreshDelayTicks;
+50-                                       ^
+51-  symbol:   method select()
+52-  location: class GuiCfg
+53:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: cannot find symbol
+54-        String side = plugin.cfg().flight().returning().shoulderSide.toUpperCase(java.util.Locale.ROOT);
+55-                                           ^
+56-  symbol:   method returning()
+57-  location: class FlightCfg
+58:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:289: error: cannot find symbol
+59-        double height = plugin.cfg().flight().ascend().height;
+60-                                             ^
+61-  symbol:   method ascend()
+62-  location: class FlightCfg
+63:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:329: error: cannot find symbol
+64-                plugin.cfg().flight().approach().heightAboveTarget,
+65-                                     ^
+66-  symbol:   method approach()
+67-  location: class FlightCfg
+68:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:363: error: cannot find symbol
+69-            long maxWaitMs = plugin.cfg().flight().landing().maxWaitSeconds * 1000L;
+70-                                                  ^
+71-  symbol:   method landing()
+72-  location: class FlightCfg
+73:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:367: error: cannot find symbol
+74-            String timeoutAction = plugin.cfg().flight().landing().timeoutAction;
+75-                                                        ^
+76-  symbol:   method landing()
+77-  location: class FlightCfg
+78:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:438: error: cannot find symbol
+79-                    .add(0, plugin.cfg().flight().approach().heightAboveTarget / 2.0D, 0);
+80-                                                 ^
+81-  symbol:   method approach()
+82-  location: class FlightCfg
+83:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: cannot find symbol
+84-            if (plugin.cfg().flight().returning().perchOnShoulder) {
+85-                                     ^
+86-  symbol:   method returning()
+87-  location: class FlightCfg
+88:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: cannot find symbol
+89-            if (plugin.cfg().flight().returning().perchOnShoulder) {
+90-                                     ^
+91-  symbol:   method returning()
+92-  location: class FlightCfg
+93:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:570: error: cannot find symbol
+94-        return switch (plugin.cfg().delivery().offlinePolicy()) {
+95-                                              ^
+96-  symbol:   method offlinePolicy()
+97-  location: class DeliveryCfg
+98:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:594: error: cannot find symbol
+99-        var a = plugin.cfg().flight().ascend();
+100-                                     ^
+101-  symbol:   method ascend()
+102-  location: class FlightCfg
+103:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:599: error: cannot find symbol
+104-        var a = plugin.cfg().flight().approach();
+105-                                     ^
+106-  symbol:   method approach()
+107-  location: class FlightCfg
+108:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:608: error: debug has private access in KasaneConfig
+109-        if (plugin.cfg().debug) {
+110-                        ^
+111:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:41: error: cannot find symbol
+112-        var scan = plugin.cfg().flight().landing();
+113-                                        ^
+114-  symbol:   method landing()
+115-  location: class FlightCfg
+116:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:84: error: cannot find symbol
+117-        if (distance < plugin.cfg().flight().landing().minDistance) {
+118-                                            ^
+119-  symbol:   method landing()
+120-  location: class FlightCfg
+121:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:98: error: cannot find symbol
+122-        var scan = plugin.cfg().flight().landing();
+123-                                        ^
+124-  symbol:   method landing()
+125-  location: class FlightCfg
+126:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:133: error: cannot find symbol
+127-        return !plugin.cfg().flight().landing().forbiddenMaterials.contains(type);
+128-                                     ^
+129-  symbol:   method landing()
+130-  location: class FlightCfg
+131:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:138: error: cannot find symbol
+132-        var scan = plugin.cfg().flight().landing();
+133-                                        ^
+134-  symbol:   method landing()
+135-  location: class FlightCfg
+136:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:113: error: cannot find symbol
+137-        ItemMeta meta = stack.getItemMeta();
+138-        ^
+139-  symbol:   class ItemMeta
+140-  location: class AbstractCourierMenu
+141:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:58: error: cannot find symbol
+142-        return chestType(plugin.cfg().gui().confirm().rows);
+143-                                           ^
+144-  symbol:   method confirm()
+145-  location: class GuiCfg
+146:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:64: error: cannot find symbol
+147-                .deserialize(plugin.cfg().gui().confirm().title);
+148-                                               ^
+149-  symbol:   method confirm()
+150-  location: class GuiCfg
+151:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:76: error: cannot find symbol
+152-        var icons = plugin.cfg().gui().confirm();
+153-                                      ^
+154-  symbol:   method confirm()
+155-  location: class GuiCfg
+156:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:80: error: cannot find symbol
+157-        ItemMeta meta = payload.getItemMeta();
+158-        ^
+159-  symbol:   class ItemMeta
+160-  location: class ConfirmMenu
+161:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:51: error: cannot find symbol
+162-        return chestType(plugin.cfg().gui().select().rows);
+163-                                           ^
+164-  symbol:   method select()
+165-  location: class GuiCfg
+166:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:58: error: cannot find symbol
+167-                plugin.cfg().gui().select().title + " <gray>(онлайн: " + online + ")</gray>"
+168-                                  ^
+169-  symbol:   method select()
+170-  location: class GuiCfg
+171:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:86: error: cannot find symbol
+172-            var icons = plugin.cfg().gui().select();
+173-                                          ^
+174-  symbol:   method select()
+175-  location: class GuiCfg
+176:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:131: error: cannot find symbol
+177-        boolean showSelf = plugin.cfg().gui().select().showSelf;
+178-                                             ^
+179-  symbol:   method select()
+180-  location: class GuiCfg
+181:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:135: error: incompatible types: List<CAP#1> cannot be converted to @org.jetbrains.annotations.NotNull List<Player>
+182-                .toList();
+183-                       ^
+184-  where CAP#1 is a fresh type-variable:
+185-    CAP#1 extends Player from capture of ? extends Player
+186:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:146: error: cannot find symbol
+187-        ItemMeta meta = head.getItemMeta();
+188-        ^
+189-  symbol:   class ItemMeta
+190-  location: class PlayerSelectMenu
+191:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:45: error: cannot find symbol
+192-        return chestType(plugin.cfg().gui().destination().rows);
+193-                                           ^
+194-  symbol:   method destination()
+195-  location: class GuiCfg
+196:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:51: error: cannot find symbol
+197-                .deserialize(plugin.cfg().gui().destination().title);
+198-                                               ^
+199-  symbol:   method destination()
+200-  location: class GuiCfg
+201:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:62: error: cannot find symbol
+202-        var icons = plugin.cfg().gui().destination();
+203-                                      ^
+204-  symbol:   method destination()
+205-  location: class GuiCfg
+206:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:39: error: package PlayerItemFrameChangeEvent does not exist
+207-        if (event.getAction() == PlayerItemFrameChangeEvent.Action.LEFT_CLICK) {
+208-                                                           ^
+209-39 errors
+210-
+211-> Task :compileJava FAILED
+212-gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1790675882702.json
+--
+221:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:135: error: incompatible types: List<CAP#1> cannot be converted to @org.jetbrains.annotations.NotNull List<Player>
+222-                  .toList();
+223-                         ^
+224-    where CAP#1 is a fresh type-variable:
+225-      CAP#1 extends Player from capture of ? extends Player
+226:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:11: error: cannot find symbol
+227-  import org.bukkit.inventory.ItemMeta;
+228-                             ^
+229-    symbol:   class ItemMeta
+230-    location: package org.bukkit.inventory
+231:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:16: error: cannot find symbol
+232-  import org.bukkit.inventory.ItemMeta;
+233-                             ^
+234-    symbol:   class ItemMeta
+235-    location: package org.bukkit.inventory
+236:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:14: error: cannot find symbol
+237-  import org.bukkit.inventory.ItemMeta;
+238-                             ^
+239-    symbol:   class ItemMeta
+240-    location: package org.bukkit.inventory
+241:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:12: error: cannot find symbol
+242-  import org.bukkit.event.player.PlayerItemFrameChangeEvent;
+243-                                ^
+244-    symbol:   class PlayerItemFrameChangeEvent
+245-    location: package org.bukkit.event.player
+246:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:31: error: cannot find symbol
+247-      public void onItemFrameChange(@NotNull PlayerItemFrameChangeEvent event) {
+248-                                             ^
+249-    symbol:   class PlayerItemFrameChangeEvent
+250-    location: class FrameInteractionListener
+251:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:113: error: cannot find symbol
+252-          ItemMeta meta = stack.getItemMeta();
+253-          ^
+254-    symbol:   class ItemMeta
+255-    location: class AbstractCourierMenu
+256:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:80: error: cannot find symbol
+257-          ItemMeta meta = payload.getItemMeta();
+258-          ^
+259-    symbol:   class ItemMeta
+260-    location: class ConfirmMenu
+261:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:146: error: cannot find symbol
+262-          ItemMeta meta = head.getItemMeta();
+263-          ^
+264-    symbol:   class ItemMeta
+265-    location: class PlayerSelectMenu
+266:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:608: error: debug has private access in KasaneConfig
+267-          if (plugin.cfg().debug) {
+268-                          ^
+269:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/listener/FrameInteractionListener.java:39: error: package PlayerItemFrameChangeEvent does not exist
+270-          if (event.getAction() == PlayerItemFrameChangeEvent.Action.LEFT_CLICK) {
+271-                                                             ^
+272:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:126: error: cannot find symbol
+273-          if (!plugin.cfg().gui().select().liveUpdate) {
+274-                                 ^
+275-    symbol:   method select()
+276-    location: class GuiCfg
+277:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/MenuService.java:132: error: cannot find symbol
+278-          long delay = plugin.cfg().gui().select().refreshDelayTicks;
+279-                                         ^
+280-    symbol:   method select()
+281-    location: class GuiCfg
+282:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/shoulder/ShoulderService.java:35: error: cannot find symbol
+283-          String side = plugin.cfg().flight().returning().shoulderSide.toUpperCase(java.util.Locale.ROOT);
+284-                                             ^
+285-    symbol:   method returning()
+286-    location: class FlightCfg
+287:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:289: error: cannot find symbol
+288-          double height = plugin.cfg().flight().ascend().height;
+289-                                               ^
+290-    symbol:   method ascend()
+291-    location: class FlightCfg
+292:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:329: error: cannot find symbol
+293-                  plugin.cfg().flight().approach().heightAboveTarget,
+294-                                       ^
+295-    symbol:   method approach()
+296-    location: class FlightCfg
+297:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:363: error: cannot find symbol
+298-              long maxWaitMs = plugin.cfg().flight().landing().maxWaitSeconds * 1000L;
+299-                                                    ^
+300-    symbol:   method landing()
+301-    location: class FlightCfg
+302:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:367: error: cannot find symbol
+303-              String timeoutAction = plugin.cfg().flight().landing().timeoutAction;
+304-                                                          ^
+305-    symbol:   method landing()
+306-    location: class FlightCfg
+307:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:438: error: cannot find symbol
+308-                      .add(0, plugin.cfg().flight().approach().heightAboveTarget / 2.0D, 0);
+309-                                                   ^
+310-    symbol:   method approach()
+311-    location: class FlightCfg
+312:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:457: error: cannot find symbol
+313-              if (plugin.cfg().flight().returning().perchOnShoulder) {
+314-                                       ^
+315-    symbol:   method returning()
+316-    location: class FlightCfg
+317:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:482: error: cannot find symbol
+318-              if (plugin.cfg().flight().returning().perchOnShoulder) {
+319-                                       ^
+320-    symbol:   method returning()
+321-    location: class FlightCfg
+322:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:570: error: cannot find symbol
+323-          return switch (plugin.cfg().delivery().offlinePolicy()) {
+324-                                                ^
+325-    symbol:   method offlinePolicy()
+326-    location: class DeliveryCfg
+327:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:594: error: cannot find symbol
+328-          var a = plugin.cfg().flight().ascend();
+329-                                       ^
+330-    symbol:   method ascend()
+331-    location: class FlightCfg
+332:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/delivery/DeliveryService.java:599: error: cannot find symbol
+333-          var a = plugin.cfg().flight().approach();
+334-                                       ^
+335-    symbol:   method approach()
+336-    location: class FlightCfg
+337:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:41: error: cannot find symbol
+338-          var scan = plugin.cfg().flight().landing();
+339-                                          ^
+340-    symbol:   method landing()
+341-    location: class FlightCfg
+342:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:84: error: cannot find symbol
+343-          if (distance < plugin.cfg().flight().landing().minDistance) {
+344-                                              ^
+345-    symbol:   method landing()
+346-    location: class FlightCfg
+347:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:98: error: cannot find symbol
+348-          var scan = plugin.cfg().flight().landing();
+349-                                          ^
+350-    symbol:   method landing()
+351-    location: class FlightCfg
+352:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:133: error: cannot find symbol
+353-          return !plugin.cfg().flight().landing().forbiddenMaterials.contains(type);
+354-                                       ^
+355-    symbol:   method landing()
+356-    location: class FlightCfg
+357:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/flight/LandingSpotFinder.java:138: error: cannot find symbol
+358-          var scan = plugin.cfg().flight().landing();
+359-                                          ^
+360-    symbol:   method landing()
+361-    location: class FlightCfg
+362:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:58: error: cannot find symbol
+363-          return chestType(plugin.cfg().gui().confirm().rows);
+364-                                             ^
+365-    symbol:   method confirm()
+366-    location: class GuiCfg
+367:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:64: error: cannot find symbol
+368-                  .deserialize(plugin.cfg().gui().confirm().title);
+369-                                                 ^
+370-    symbol:   method confirm()
+371-    location: class GuiCfg
+372:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/ConfirmMenu.java:76: error: cannot find symbol
+373-          var icons = plugin.cfg().gui().confirm();
+374-                                        ^
+375-    symbol:   method confirm()
+376-    location: class GuiCfg
+377:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:51: error: cannot find symbol
+378-          return chestType(plugin.cfg().gui().select().rows);
+379-                                             ^
+380-    symbol:   method select()
+381-    location: class GuiCfg
+382:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:58: error: cannot find symbol
+383-                  plugin.cfg().gui().select().title + " <gray>(онлайн: " + online + ")</gray>"
+384-                                    ^
+385-    symbol:   method select()
+386-    location: class GuiCfg
+387:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:86: error: cannot find symbol
+388-              var icons = plugin.cfg().gui().select();
+389-                                            ^
+390-    symbol:   method select()
+391-    location: class GuiCfg
+392:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:131: error: cannot find symbol
+393-          boolean showSelf = plugin.cfg().gui().select().showSelf;
+394-                                               ^
+395-    symbol:   method select()
+396-    location: class GuiCfg
+397:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:45: error: cannot find symbol
+398-          return chestType(plugin.cfg().gui().destination().rows);
+399-                                             ^
+400-    symbol:   method destination()
+401-    location: class GuiCfg
+402:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:51: error: cannot find symbol
+403-                  .deserialize(plugin.cfg().gui().destination().title);
+404-                                                 ^
+405-    symbol:   method destination()
+406-    location: class GuiCfg
+407:  /home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/DestinationMenu.java:62: error: cannot find symbol
+408-          var icons = plugin.cfg().gui().destination();
+409-                                        ^
+410-    symbol:   method destination()
+411-    location: class GuiCfg
+412-  39 errors
+413-
+--
+482:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/PlayerSelectMenu.java:135: error: incompatible types: List<CAP#1> cannot be converted to @org.jetbrains.annotations.NotNull List<Player>
+483-                .toList();
+484-                       ^
+485-  where CAP#1 is a fresh type-variable:
+486-    CAP#1 extends Player from capture of ? extends Player
+487:/home/runner/work/KasaneParrot/KasaneParrot/src/main/java/dev/dolbaeb/kasaneparrot/gui/AbstractCourierMenu.java:11: error: cannot find symbol
+488-import org.bukkit.inventory.ItemMeta;
+489-                           ^
+490-  symbol:   class ItemMeta
+491-  location: package org.bukkit.inventory
 
 ===== tail -120 =====
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
-	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
-	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
-	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
-	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
-	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
-	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
-	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
-	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
-	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
-	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
-	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
-	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
-	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
-	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
@@ -267,9 +488,38 @@ date: 2026-09-29T09:54:19Z
 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
 
 
-BUILD FAILED in 32s
+BUILD FAILED in 43s
 1 actionable task: 1 executed
